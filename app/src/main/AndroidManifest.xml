@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.S8066012Assignment2">
         <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">

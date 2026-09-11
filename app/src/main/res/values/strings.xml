@@ -11,4 +11,5 @@
     <string name="retry_button">Retry</string>
     <string name="animal_count">Animals: %1$d</string>
     <string name="no_animals">No animals were returned.</string>
+    <string name="animal_summary">Habitat: %1$s\nDiet: %2$s\nConservation status: %3$s\nAverage lifespan: %4$d years</string>
 </resources>

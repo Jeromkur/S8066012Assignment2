@@ -1,5 +1,8 @@
 package com.vu.s8066012assignment2
 
+
+import android.content.Intent
+import com.vu.s8066012assignment2.ui.dashboard.DashboardActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
@@ -83,9 +86,22 @@ class MainActivity : AppCompatActivity() {
                     message.text = when (state) {
                         is LoginUiState.Error -> state.message
 
-                        // Temporary check before adding Dashboard navigation.
-                        is LoginUiState.Success ->
-                            getString(R.string.login_success, state.keypass)
+                        // Opens the Dashboard after successful login.
+                        is LoginUiState.Success -> {
+                            if (!isFinishing) {
+                                val dashboardIntent = Intent(
+                                    this@MainActivity,
+                                    DashboardActivity::class.java
+                                )
+                                dashboardIntent.putExtra(
+                                    DashboardActivity.EXTRA_KEYPASS,
+                                    state.keypass
+                                )
+                                startActivity(dashboardIntent)
+                                finish()
+                            }
+                            ""
+                        }
 
                         else -> ""
                     }
