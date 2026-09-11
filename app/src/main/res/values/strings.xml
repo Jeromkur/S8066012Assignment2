@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">S8066012Assignment2</string>
+    <string name="login_title">Welcome</string>
+    <string name="login_subtitle">Sign in to explore your assigned collection.</string>
+    <string name="student_id_hint">Student ID (without s)</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Log in</string>
+    <string name="login_success">Login successful! Your topic is: %1$s</string>
+    <string name="dashboard_title">Animal Explorer</string>
+    <string name="dashboard_subtitle">Select an animal to learn more.</string>
+    <string name="retry_button">Retry</string>
+    <string name="animal_count">Animals: %1$d</string>
+    <string name="no_animals">No animals were returned.</string>
 </resources>
