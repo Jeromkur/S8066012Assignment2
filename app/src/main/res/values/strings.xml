@@ -12,4 +12,7 @@
     <string name="animal_count">Animals: %1$d</string>
     <string name="no_animals">No animals were returned.</string>
     <string name="animal_summary">Habitat: %1$s\nDiet: %2$s\nConservation status: %3$s\nAverage lifespan: %4$d years</string>
+    <string name="back_to_animals">Back to animals</string>
+    <string name="description_heading">Description</string>
+    <string name="animal_details_missing">Animal details are unavailable. Please select an animal again.</string>
 </resources>

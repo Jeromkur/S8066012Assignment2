@@ -1,10 +1,10 @@
 package com.vu.s8066012assignment2.ui.dashboard
 
+import com.vu.s8066012assignment2.ui.details.DetailsActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -55,12 +55,7 @@ class DashboardActivity : AppCompatActivity() {
             findViewById<MaterialButton>(R.id.retryButton)
 
         val animalAdapter = AnimalAdapter { animal ->
-            // Temporary click check; Details navigation comes next.
-            Toast.makeText(
-                this,
-                animal.species,
-                Toast.LENGTH_SHORT
-            ).show()
+            startActivity(DetailsActivity.createIntent(this, animal))
         }
 
         recyclerView.layoutManager = LinearLayoutManager(this)
