@@ -31,17 +31,17 @@ dependency injection to separate responsibilities.
 
 Location and Purpose 
 
-data/network : Retrofit API interface and request/response models 
-data/repository:Authentication and dashboard data access          
-di :  Hilt module providing networking dependencies 
-ui/login     :  Login ViewModel and UI states 
-ui/dashboard :  Dashboard Activity, ViewModel, and RecyclerView adapter 
-ui/details   :  Animal Details Activity |
-MainActivity.kt : Login screen and dashboard navigation 
-AssignmentApplication.kt  : Hilt application entry point 
-res/layout    : XML screen layouts and animal card layout 
-res/values   : String resources, colours, and themes 
-src/test   : Local unit tests
+- data/network : Retrofit API interface and request/response models 
+- data/repository:Authentication and dashboard data access          
+- di :  Hilt module providing networking dependencies 
+- ui/login     :  Login ViewModel and UI states 
+- ui/dashboard :  Dashboard Activity, ViewModel, and RecyclerView adapter 
+- ui/details   :  Animal Details Activity |
+- MainActivity.kt : Login screen and dashboard navigation 
+- AssignmentApplication.kt  : Hilt application entry point 
+- res/layout    : XML screen layouts and animal card layout 
+- res/values   : String resources, colours, and themes 
+- src/test   : Local unit tests
 
 Activities display UI state and handle user interactions.
 ViewModels manage loading, success, and error states.
@@ -102,6 +102,10 @@ Build configuration:
 - Compile SDK: 37
 - Target SDK: 37
 - Java source and target compatibility: 17
+
+Build tooling: Android Gradle Plugin 9.3.2 and Gradle 9.5.0.
+The Gradle daemon is configured to use JDK 25.
+Java source and target compatibility remain 17.
 
 Use Android Studio's compatible bundled Gradle JDK and the
 Gradle wrapper included in this repository.

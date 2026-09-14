@@ -1,4 +1,4 @@
-package com.vu.s80666012assignment2
+package com.vu.s8066012assignment2
 
 import com.vu.s8066012assignment2.data.network.Animal
 import com.vu.s8066012assignment2.data.network.ApiService
