@@ -59,11 +59,10 @@ class LoginViewModel @Inject constructor(
                 }
                 _uiState.value = LoginUiState.Error(message)
 
-            }  catch (e: IOException) {
-            // Temporary diagnostic message during development.
-            _uiState.value = LoginUiState.Error(
-                "Connection failed: ${e.javaClass.simpleName}: ${e.message}"
-            )
+            } catch (e: IOException) {
+                _uiState.value = LoginUiState.Error(
+                    "Connection failed. Check your internet and try again."
+                )
 
             } catch (e: Exception) {
                 _uiState.value =
